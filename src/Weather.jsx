@@ -60,7 +60,11 @@ const Weather = () => {
 	}, []);
 
 	if (!weather) {
-		return <div>Loading...</div>;
+		return (
+			<div className='loading'>
+				<h1>Loading...</h1>
+			</div>
+		);
 	}
 
 	return (
@@ -88,7 +92,10 @@ const Weather = () => {
 					<>
 						<div>Forcast Weather</div>
 						{forcastData.slice(1, limit).map((data, index) => (
-							<WeatherComponent key={index} weather={data} />
+							<WeatherComponent
+								key={index}
+								weather={{ ...data, name: weather.name }}
+							/>
 						))}
 						{limit == 4 ? (
 							<button onClick={expandForcast}>see more</button>
