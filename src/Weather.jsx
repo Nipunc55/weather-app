@@ -4,7 +4,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import WeatherComponent from './WeatherComponent';
+import WeatherComponent from './components/WeatherComponent';
 const KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 const Weather = () => {

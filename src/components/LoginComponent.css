@@ -31,7 +31,7 @@ a:active:hover {
 }
 
 #login-form-wrap {
-	background-color: #fff;
+	background-color: #ffffffd8;
 	font-size: 1.6rem;
 	font-family: 'Open Sans', sans-serif;
 	color: #2b3e51;
@@ -111,13 +111,4 @@ input[type='password']:focus:invalid {
 	background-color: #6ca0bd;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
-}
-
-#create-account-wrap {
-	background-color: #eeedf1;
-	color: #8a8b8e;
-	font-size: 14px;
-	width: 100%;
-	padding: 10px 0;
-	border-radius: 0 0 4px 4px;
 }
